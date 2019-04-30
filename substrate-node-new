@@ -83,9 +83,9 @@ git add * .gitignore 2>/dev/null >/dev/null
 git commit -a -m "Initial clone from template node" 2>/dev/null >/dev/null
 
 echo "${bold}Initializing WebAssembly build environment...${normal}"
-./scripts/init.sh 2>/dev/null >/dev/null
+./init.sh 2>/dev/null >/dev/null
 
-./scripts/build.sh
+./build.sh
 
 echo "${bold}Building node...${normal}"
 cargo build --release
